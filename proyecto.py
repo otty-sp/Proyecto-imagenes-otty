@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.image as im
 import glob
+import numpy
 
 class clasificador(object):
     '''
