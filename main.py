@@ -9,3 +9,5 @@ Para cada carpeta en Ruta hacer:
   continuar a la siguiente carpeta
  
  clasificador(listaImagenes)
+k
+
