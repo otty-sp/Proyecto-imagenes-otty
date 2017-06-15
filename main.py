@@ -1,3 +1,6 @@
+## Hola Otty sigo pendiente de estos cambios que aparecen en este archivo
+## avisame en cuanto actualizes este archivo
+
 Ruta = "otty"
 ListaImagenes = []
 Para cada carpeta en Ruta hacer:
