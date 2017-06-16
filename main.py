@@ -1,5 +1,5 @@
 #crear lista de imagenes y guardarlas
-class Listaim:
+class Listaimagen:
 	def __init__(self):
 		self.lista=[]
 #crear una biblioteca con varias carpetas
