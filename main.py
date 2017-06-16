@@ -1,8 +1,9 @@
-#crear lista de imagenes, guardar imagenes
+#crear lista de imagenes y guardarlas
 class Listaim:
 	def __init__(self):
 		self.lista=[]
-#almacenar en mas de una carpeta
+#crear una biblioteca con varias carpetas
+#utilizo el .txt pero no se si este ya bien emplementado el codigo 
 	def almacenar(self):
 		try
 		os.mkdir(os.path.dirname(os.path.realpath(__file__))+'/etiquetada')
@@ -14,7 +15,7 @@ class Listaim:
 			if os.path.isdir(carpeta)==True:
 		for archivo in os.listdir(carpeta):
 			if os.path.isfile(carpeta+'/'+archivo)==True:
-				if archivo.lower().endswith(('.png')):
+				if archivo.lower().endswith((('.png', '.jpg', '.gif')):
 					ver=Image.open(carpeta+'/'+archivo)
 					ver.show()
 					etiqueta=raw_input('Etiqueta ')
@@ -32,7 +33,7 @@ class Listaim:
 		else:
 			print 'la carpeta no existe'
 		informacion.close()
-#contara las etiquedas de la carpeta del directorio		
+#Aqui cuenta las etiquetas como su nombre lo dice	
 	def contar_etiquetas(self):
 		etiquetas={}
 		for i in self.lista:
@@ -43,7 +44,7 @@ class Listaim:
 		return etiquetas
 
 		
-#definimos revisar para "revisar" las imagenes guardadas en la lista
+#REvisa las imagenes guardadas en la lista
 	def revisar(self):
 		if os.path.isdir(os.path.dirname(os.path.realpath(__file__))+'/etiqueta')==True:
 			if os.path.isfile(os.path.dirname(os.path.realpath(__file__))+'/etiquetada/informacion.txt'):
