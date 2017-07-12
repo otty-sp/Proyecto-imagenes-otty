@@ -1,4 +1,4 @@
-             class procesador:
+    class procesador:
              
              #libreria.txt
  
